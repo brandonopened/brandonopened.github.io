@@ -6,30 +6,45 @@
     <title>Brandon Dorman - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f8f9fa;
+            color: #212529;
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #444;
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #343a40;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #495057;
+            border-bottom: 2px solid #ced4da;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 1rem;
+            line-height: 1.6;
         }
         .contact {
+            text-align: center;
             margin-bottom: 20px;
         }
         .contact a {
-            color: #1d72b8;
+            color: #007bff;
             text-decoration: none;
+            margin: 0 10px;
         }
         .contact a:hover {
             text-decoration: underline;
@@ -39,48 +54,124 @@
             padding: 0;
         }
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .section {
+            margin-bottom: 30px;
+        }
+        .job {
             margin-bottom: 20px;
+        }
+        .job-details {
+            margin-bottom: 10px;
+        }
+        .projects {
+            margin-top: 10px;
+        }
+        .projects summary {
+            font-weight: bold;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Brandon Dorman</h1>
-        <p>Oregon, USA | <a href="mailto:Brandon.dorman@gmail.com">Brandon.dorman@gmail.com</a> | (559) 824-5153</p>
-        <p>
-            <a href="https://linkedin.com/in/brandondorman" target="_blank">LinkedIn</a> |
-            <a href="https://skillsandstandards.substack.com/" target="_blank">Substack</a>
-        </p>
+        <div class="contact">
+            <p>Oregon, USA | <a href="mailto:Brandon.dorman@gmail.com">Brandon.dorman@gmail.com</a> | (559) 824-5153</p>
+            <p>
+                <a href="https://linkedin.com/in/brandondorman" target="_blank">LinkedIn</a>
+                |
+                <a href="https://skillsandstandards.substack.com/" target="_blank">Substack</a>
+            </p>
+        </div>
 
         <div class="section">
             <h2>Experience</h2>
             <ul>
-                <li><strong>Frog Street Press</strong><br>
-                    <em>Senior Product Manager, AI-Powered Content Solutions</em> | Sept 2023 – Present<br>
-                    Led the development and deployment of AI-powered content creation tools, achieving efficiency improvements across six companies and mentoring cross-functional teams.
+                <li class="job">
+                    <div class="job-details">
+                        <strong>Frog Street Press</strong><br>
+                        <em>Senior Product Manager, AI-Powered Content Solutions</em> | Sept 2023 – Present<br>
+                        Led the development and deployment of AI-powered content creation tools, achieving efficiency improvements across six companies and mentoring cross-functional teams.
+                    </div>
+                    <details class="projects">
+                        <summary>Projects</summary>
+                        <ul>
+                            <li>Developed a content recommendation engine reducing manual work by 50%.</li>
+                            <li>Implemented agile methodologies to streamline project timelines by 30%.</li>
+                        </ul>
+                    </details>
                 </li>
-                <li><strong>Empath</strong><br>
-                    <em>Director, Skills AI Solutions</em> | Oct 2020 – Aug 2023<br>
-                    Directed the launch of an AI-driven Skills Taxonomy Manager in 2021, increasing customer efficiency by 75% week-over-week and managing cross-functional teams over Data Science, engineering, and sales enablement.
+                <li class="job">
+                    <div class="job-details">
+                        <strong>Empath</strong><br>
+                        <em>Director, Skills AI Solutions</em> | Oct 2020 – Aug 2023<br>
+                        Directed the launch of an AI-driven Skills Taxonomy Manager in 2021, increasing customer efficiency by 75% week-over-week and managing cross-functional teams over Data Science, engineering, and sales enablement.
+                    </div>
+                    <details class="projects">
+                        <summary>Projects</summary>
+                        <ul>
+                            <li>Launched a skills analytics dashboard adopted by 100+ clients.</li>
+                            <li>Collaborated with engineering to integrate NLP features, improving data insights.</li>
+                        </ul>
+                    </details>
                 </li>
-                <li><strong>Fresno Pacific University</strong><br>
-                    <em>Adjunct Professor, Data Science and AI</em> | 2013 – Present<br>
-                    Created and taught courses on AI and curriculum development, empowering educators with actionable tools for data-driven decision-making.
+                <li class="job">
+                    <div class="job-details">
+                        <strong>Fresno Pacific University</strong><br>
+                        <em>Adjunct Professor, Data Science and AI</em> | 2013 – Present<br>
+                        Created and taught courses on AI and curriculum development, empowering educators with actionable tools for data-driven decision-making.
+                    </div>
+                    <details class="projects">
+                        <summary>Projects</summary>
+                        <ul>
+                            <li>Designed AI in Education workshops for 200+ participants annually.</li>
+                            <li>Developed a curriculum for integrating machine learning in K-12 settings.</li>
+                        </ul>
+                    </details>
                 </li>
-                <li><strong>ACT</strong><br>
-                    <em>Lead Product Manager, ML-Powered EdTech Solutions</em> | Oct 2017 – Oct 2020<br>
-                    0-Launch for ACT SkillSuite’s ML suite of products, optimizing market fit through agile prototyping and cross-functional collaboration.
+                <li class="job">
+                    <div class="job-details">
+                        <strong>ACT</strong><br>
+                        <em>Lead Product Manager, ML-Powered EdTech Solutions</em> | Oct 2017 – Oct 2020<br>
+                        0-Launch for ACT SkillSuite’s ML suite of products, optimizing market fit through agile prototyping and cross-functional collaboration.
+                    </div>
+                    <details class="projects">
+                        <summary>Projects</summary>
+                        <ul>
+                            <li>Pioneered a prototype for personalized learning pathways.</li>
+                            <li>Collaborated with marketing teams to achieve a 40% growth in adoption rates.</li>
+                        </ul>
+                    </details>
                 </li>
-                <li><strong>OpenEd (Acquired by ACT)</strong><br>
-                    <em>Senior Content Manager</em> | June 2015 – Oct 2017<br>
-                    Designed AI-driven content curation systems, aligning 200,000 resources to standards and improving adoption among 200K educators.
+                <li class="job">
+                    <div class="job-details">
+                        <strong>OpenEd (Acquired by ACT)</strong><br>
+                        <em>Senior Content Manager</em> | June 2015 – Oct 2017<br>
+                        Designed AI-driven content curation systems, aligning 200,000 resources to standards and improving adoption among 200K educators.
+                    </div>
+                    <details class="projects">
+                        <summary>Projects</summary>
+                        <ul>
+                            <li>Created a standards mapping tool adopted by major districts.</li>
+                            <li>Managed a content repository scaling to 1 million resources.</li>
+                        </ul>
+                    </details>
                 </li>
-                <li><strong>Fresno Unified School District</strong><br>
-                    <em>Math Educator and Teacher on Special Assignment</em> | June 2006 – June 2015<br>
-                    Trained educators and taught 9 years in 7-12 classrooms to integrate technology-driven tools into classrooms, improving teaching outcomes and student engagement.
+                <li class="job">
+                    <div class="job-details">
+                        <strong>Fresno Unified School District</strong><br>
+                        <em>Math Educator and Teacher on Special Assignment</em> | June 2006 – June 2015<br>
+                        Trained educators and taught 9 years in 7-12 classrooms to integrate technology-driven tools into classrooms, improving teaching outcomes and student engagement.
+                    </div>
+                    <details class="projects">
+                        <summary>Projects</summary>
+                        <ul>
+                            <li>Implemented a district-wide tech training program for 100+ educators.</li>
+                            <li>Developed interactive math tools improving student performance by 25%.</li>
+                        </ul>
+                    </details>
                 </li>
             </ul>
         </div>
