@@ -9,44 +9,61 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #212529;
+            background-color: #f0f2f5;
+            color: #1a1a1a;
+            line-height: 1.6;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             background: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #343a40;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
             text-align: center;
+            font-weight: 700;
+        }
+        subtitle {
+            display: block;
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-style: italic;
         }
         h2 {
-            font-size: 1.5rem;
-            color: #495057;
-            border-bottom: 2px solid #ced4da;
-            padding-bottom: 5px;
-            margin-top: 30px;
+            font-size: 1.8rem;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-weight: 600;
         }
         p, li {
-            font-size: 1rem;
-            line-height: 1.6;
+            font-size: 1.05rem;
+            line-height: 1.7;
         }
         .contact {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
         }
         .contact a {
-            color: #007bff;
+            color: #2980b9;
             text-decoration: none;
             margin: 0 10px;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
         .contact a:hover {
+            color: #3498db;
             text-decoration: underline;
         }
         ul {
@@ -54,47 +71,91 @@
             padding: 0;
         }
         ul li {
-            margin-bottom: 15px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .job {
             margin-bottom: 20px;
         }
+        .section {
+            margin-bottom: 40px;
+        }
+        .job {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .job:hover {
+            background-color: #f8f9fa;
+        }
         .job-details {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .projects {
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .projects summary {
-            font-weight: bold;
+            font-weight: 600;
             cursor: pointer;
+            color: #2c3e50;
+            padding: 5px 0;
         }
         .repositories {
-            margin-top: 10px;
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
         }
         .repositories a {
-            color: #007bff;
+            color: #2980b9;
             text-decoration: none;
+            font-weight: 500;
         }
         .repositories a:hover {
+            color: #3498db;
             text-decoration: underline;
+        }
+        .github-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .github-link:hover {
+            background: #2f363d;
+        }
+        .framework-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .framework-link:hover {
+            background: #2980b9;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Brandon Dorman</h1>
-            <subtitle>Welcome to my Githug Pages resumé! Note that I have linked Repositories where I claim to have specific technical skills especially around AI. Show not tell!</subtitle>
+        <subtitle>Welcome to my GitHub Pages resumé! Note that I have linked Repositories where I claim to have specific technical skills especially around AI. Show not tell!</subtitle>
         <div class="contact">
             <p>Oregon, USA | <a href="mailto:Brandon.dorman@gmail.com">Brandon.dorman@gmail.com</a> | (559) 824-5153</p>
             <p>
                 <a href="https://linkedin.com/in/brandondorman" target="_blank">LinkedIn</a>
                 |
                 <a href="https://skillsandstandards.substack.com/" target="_blank">Substack</a>
+                |
+                <a href="https://github.com/brandonopened" target="_blank">GitHub</a>
             </p>
+            <a href="https://v0-student-learning-journey.vercel.app/" target="_blank" class="framework-link">Explore Skills Framework</a>
         </div>
 
         <div class="section">
@@ -167,7 +228,7 @@
                     <div class="job-details">
                         <strong>ACT</strong><br>
                         <em>Lead Product Manager, ML-Powered EdTech Solutions</em> | Oct 2017 – Oct 2020<br>
-                        Spearheaded the development of ACT SkillSuite’s ML-based products. Collaborated with marketing, engineering, and customer success teams to optimize market fit and drive user adoption.
+                        Spearheaded the development of ACT SkillSuite's ML-based products. Collaborated with marketing, engineering, and customer success teams to optimize market fit and drive user adoption.
                     </div>
                     <details class="projects">
                         <summary>Projects</summary>
@@ -223,6 +284,15 @@
                 <li>IBM Data Science Certificate, 2023 (Coursera)</li>
                 <li>Co-authored chapter on Interoperability in Technology-Based Assessment Guidelines, 2023</li>
                 <li>Co-Chair CASE Interoperability Specification Workgroup, IMS Global 2018-2020</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Open Source Contributions</h2>
+            <ul>
+                <li>Co-Chair, HR Open Shareable Skills Workgroup (2025-Present)</li>
+                <li>Active contributor to various open source projects focused on education technology and AI</li>
+                <li>Maintainer of several public repositories demonstrating AI and ML implementations</li>
             </ul>
         </div>
     </div>
